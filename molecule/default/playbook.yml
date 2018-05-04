@@ -1,0 +1,7 @@
+---
+
+- name: run the main role
+  hosts: all
+  roles:
+    - role: ansible-consul-template
+      consul_template_use_systemd: true

@@ -1,0 +1,11 @@
+---
+package:
+  consul-template:
+    installed: true
+service:
+  consul-template:
+    enabled: true
+    running: true
+process:
+  consul-template:
+    running: true
