@@ -2,6 +2,9 @@
 
 - name: run the main role
   hosts: all
+  pre_tasks:
+    - name: install latest ca-certificates
+      package: name=ca-certificates state=latest
   roles:
     - role: ansible-consul-template
       consul_template_use_systemd: true
